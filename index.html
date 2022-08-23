@@ -4,887 +4,639 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attack on Titan</title>
+    <title>ATTACK ON TITAN</title>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---------- falcon icon--------->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io (1)/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io (1)/site.webmanifest">
-    <script src="https://kit.fontawesome.com/474192ac5d.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
-    <link rel="stylesheet" href="./aot 2nd v.css">
-    <!-- CSS carousel-->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!--------- swiper css --------->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!----------- CSS--------------->
+    <link rel="stylesheet" href="aotcss.css">
+
 </head>
 <body>
 
-    <div id="progressbar"></div>
-    <div id="scrollpath"></div>
-    
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </label>
-
-        <!--<label class="logo"></label>-->
-        <label class="aot"></label>
-
-        <ul>
-            <li><a class="active" href="#"> home</a></li>
-            <li><a href="#about1">about</a></li>
-            <li><a href="#dots_id">Season</a></li>
-            <li><a href="#dots_ova">ova</a></li>
-            <li><a href="#dots_download">download</a></li>
-            <li><a href="#dots_wallpaper">wallpapers</a></li>
-            <li><a href="#dots_manga_id">manga</a></li>
-        </ul>
-    </nav>
-
     <header>
 
-        <div class="right_col">
+        <a href="#" class="mainlogo">
+            <img id="aotlogo" src="./images/aot logo.png" alt="Attack on Titan">
+         </a>
 
-            <p class="click_here">click here to listen</p>
-            <img id="icon" src="play.png">
-    
-        </div>
-    
-        <audio id="mysong">
-            <source src="aot 2nd music.mp3" type="audio/mp3">
-        </audio>
+         <i class='bx bx-menu' id="menu-icon"></i>
 
-        <div class="banner"></div>
+        <ul class="navbar">
+            <li><a href="#" class="home-active">Home</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#manga_op">manga</a></li>
+            <li><a target="_blank" href="https://www.aotnorequiem.com/">Fan manga</a></li>
+            <li><a href="#">wallpaper</a></li>
+        </ul>
+
+        <a target="_blank" href="https://t.me/ANIMEMOVIEANDSERIES1" class="tele">
+            <i class='bx bxl-telegram' ></i>
+        </a>
 
     </header>
-    
-    <section class="dots_caro" id="dots_wallpaper">
 
-        <h2><span>wallpapers of aot</span></h2>
-
-        <!--  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>  -->
-            <div class="carousel" data-flickity='{ "autoPlay": 1500 , "wrapAround": true }' >
-
-            <img class="caro" src="https://images7.alphacoders.com/418/thumbbig-418724.webp">
-            <img class="caro" src="https://images6.alphacoders.com/451/thumbbig-451608.webp">
-            <img class="caro" src="https://images7.alphacoders.com/607/thumbbig-607718.webp">
-            <img class="caro" src="https://images4.alphacoders.com/607/thumbbig-607866.webp">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/832/198/498/anime-attack-on-titan-attack-on-titan-levi-ackerman-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/639/1001/101/anime-attack-on-titan-attack-on-titan-black-hair-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/334/944/50/anime-attack-on-titan-eren-yeager-reiner-braun-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/1006/160/1002/shingeki-no-kyojin-anime-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/810/396/994/shingeki-no-kyojin-eren-jeager-anime-anime-boys-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/460/119/714/anime-attack-on-titan-armin-arlert-eren-yeager-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/645/885/158/mikasa-ackerman-scarf-shingeki-no-kyojin-anime-girls-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/997/210/533/anime-attack-on-titan-attack-on-titan-levi-ackerman-wallpaper-preview.jpg">
-            <img class="caro" src="https://c4.wallpaperflare.com/wallpaper/263/527/761/shingeki-no-kyojin-mikasa-ackerman-colossal-titan-wallpaper-preview.jpg">
-            <img class="caro" src="https://images8.alphacoders.com/435/thumbbig-435907.webp">
-            <img class="caro" src="https://images3.alphacoders.com/612/thumbbig-612522.webp">
-            <img class="caro" src="https://images8.alphacoders.com/647/thumbbig-647051.webp">
-            <img class="caro" src="https://images5.alphacoders.com/505/thumbbig-505623.webp">
-            <img class="caro" src="https://images3.alphacoders.com/653/thumbbig-653510.webp">
-            <img class="caro" src="https://images4.alphacoders.com/607/thumbbig-607739.webp">
-            <img class="caro" src="https://images5.alphacoders.com/430/thumbbig-430630.webp">
-            <img class="caro" src="https://images7.alphacoders.com/463/thumbbig-463595.webp">
-            <img class="caro" src="https://images4.alphacoders.com/612/thumbbig-612507.webp">
-            <img class="caro" src="https://images3.alphacoders.com/665/thumbbig-665355.webp">
-            <img class="caro" src="https://images4.alphacoders.com/607/thumbbig-607882.webp">
-            <img class="caro" src="https://images2.alphacoders.com/606/thumbbig-606229.webp">
-            <img class="caro" src="https://images3.alphacoders.com/728/thumbbig-728021.webp">
-            <img class="caro" src="https://images4.alphacoders.com/753/thumbbig-753416.webp">
-            <img class="caro" src="https://images2.alphacoders.com/679/thumbbig-679712.webp">
-            <img class="caro" src="https://images8.alphacoders.com/632/thumbbig-632838.webp">
-            <img class="caro" src="https://images3.alphacoders.com/653/thumbbig-653509.webp">
-            <img class="caro" src="https://images3.alphacoders.com/638/thumbbig-638799.webp">
-            <img class="caro" src="https://images6.alphacoders.com/560/thumbbig-560153.webp">
-            <img class="caro" src="https://images7.alphacoders.com/653/thumbbig-653540.webp">
-            <img class="caro" src="https://images4.alphacoders.com/814/thumbbig-814948.webp">
-            <img class="caro" src="https://images3.alphacoders.com/582/thumbbig-582792.webp">
-            <img class="caro" src="https://images6.alphacoders.com/753/thumbbig-753292.webp">
-            <img class="caro" src="https://images7.alphacoders.com/682/thumbbig-682054.webp">
-            <img class="caro" src="https://images8.alphacoders.com/632/thumbbig-632840.webp">
-            <img class="caro" src="https://images5.alphacoders.com/102/thumbbig-1024257.webp">
-            <img class="caro" src="https://images6.alphacoders.com/890/thumbbig-890436.webp">
-            <img class="caro" src="https://images6.alphacoders.com/112/thumbbig-1126962.webp">
-            <img class="caro" src="./img/wallpaper aot/ali-shimhaq-armored-titan.jpg">
-            <img class="caro" src="./img/wallpaper aot/ali-shimhaq-beast-titan.jpg">
-            <img class="caro" src="./img/wallpaper aot/ali-shimhaq-cart-titan.jpg">
-            <img class="caro" src="./img/wallpaper aot/ali-shimhaq-colossal-titan.jpg">
-            <img class="caro" src="./img/wallpaper aot/ali-shimhaq-erenattacktitan.jpg">
-            <img class="caro" src="./img/wallpaper aot/ali-shimhaq-female-titan.jpg">
-            <img class="caro" src="./img/wallpaper aot/aoi-ogata-ymirrr.jpg">
-            <img class="caro" src="./img/wallpaper aot/bassem-wageeh-rf-14-edit.jpg">
-            <img class="caro" src="./img/wallpaper aot/bassem-wageeh-rf-8-edit.jpg">
-            <img class="caro" src="./img/wallpaper aot/gianluca-rolli-1-copia.jpg">
-            <img class="caro" src="./img/wallpaper aot/gianluca-rolli-2-copia.jpg">
-            <img class="caro" src="./img/wallpaper aot/gianluca-rolli-6-copia.jpg">
-            <img class="caro" src="./img/wallpaper aot/gianluca-rolli-7-copia.jpg">
-            <img class="caro" src="./img/wallpaper aot/gianluca-rolli-8-copia.jpg">
-            <img class="caro" src="./img/wallpaper aot/hamza-lahmoudi-eren-pdp.jpg">
-            <img class="caro" src="./img/wallpaper aot/jacob-noble-illustration8-jacob-noble-s-conflicted-copy-1.jpg">
-            <img class="caro" src="./img/wallpaper aot/jarreau-wimberly-attack-on-titan-jarreauwimberly.jpg">
-            <img class="caro" src="./img/wallpaper aot/lihang-w-junr-mk2.jpg">
-            <img class="caro" src="./img/wallpaper aot/loic-sprimont-standingshot01-copy.jpg">
-            <img class="caro" src="./img/wallpaper aot/margaux-valonia-snk-2-a4.jpg">
-            <img class="caro" src="./img/wallpaper aot/michael_chang_michael_personal_art_attack_on_titan_titans_fan_art.jpg">
-            <img class="caro" src="./img/wallpaper aot/michele-esposito-aot2.jpg">
-            <img class="caro" src="./img/wallpaper aot/michele-esposito-aot3s.jpg">
-            <img class="caro" src="./img/wallpaper aot/peter-jackson-asset.jpg">
-            <img class="caro" src="./img/wallpaper aot/rafael-benedicto-mikasa-rain-8-bit-for-print.jpg">
-            <img class="caro" src="./img/wallpaper aot/raymond-chen-rumbling-bottom.jpg">
-            <img class="caro" src="./img/wallpaper aot/raymond-chen-rumbling-final.jpg">
-            <img class="caro" src="./img/wallpaper aot/ryan-oliveira-baroes-da-pisadinhafullhd.jpg">
-            <img class="caro" src="./img/wallpaper aot/wp9408694-aot-founding-titan-wallpapers.png">
-            <img class="caro" src="./img/wallpaper aot/wp9833290-attack-on-titan-the-rumbling-wallpapers.png">
-
-
-        </div>
-
-    </section>
-    
-    <section class="dots" id="dots_id">
-
-        <h2><span>season 1 (dub)</span></h2>
-        <div class="poster_img">
-        
-        <a target="_blank" href="./seasons/season 1.html" title="ATTACK ON TITAN SEASON 1 (DUB)">
-        <img id="poster_s1"
-            src="./img/season 1 posterr.jpg"
-            alt="ATTACK ON TITAN POSTER">
-        </a>
-        </div>
-        <p class="p_s1">
-
-       <a class="desc" href="./seasons/season 1.html" title="attack on titan season 1">ATTACK ON TITAN SEASON 1(DUB)</a>
-
-        </p>
-        <p class="released_date">
-            Released: 2013
-        </p>
-    </section>
-
-    <section class="dots">
-
-        <h2><span>season 2 (dub)</span></h2>
-
-        <div>
-
-            <a target="_blank" href="./seasons/season 2.html">
-
-                <img id="poster_s2" src="https://wallpapercave.com/wp/wp9136863.png" alt="attack on titan season 2 poster">
-
-            </a>
-
-        </div>
-
-        <p class="p_s2">
-
-            <a class="desc" href="./seasons/season 2.html">ATTACK ON TITAN SEASON 2 (DUB)</a>
-
-        </p>
-        
-        <p class="released_date">
-
-            Released: 2017
-
-        </p>
-
-    </section>
-
-    <section class="dots_s3_p1">
-
-        <h2><span>season 3 part 1 (dub)</span></h2>
-
-        <div>
-
-            <a target="_blank" href="./seasons/season 3 part 1.html">
-
-                <img id="poster_s3_p1" src="https://wallpapercave.com/dwp1x/wp8276654.jpg" alt="attack on titan season 3 part 1 poster">
-
-            </a>
-
-        </div>
-
-        <p class="p_s3_p1">
-
-            <a class="desc" href="./seasons/season 3 part 1.html">ATTACK ON TITAN SEASON 3 PART 1 (DUB)</a>
-
-        </p>
-        
-        <p class="released_date">
-
-            Released: 2018
-
-        </p>
-
-
-    </section>
-
-    <section class="dots_s3_p2">
-
-        <h2><span>season 3 part 2 (dub)</span></h2>
-
-        <div>
-
-            <a target="_blank" href="./seasons/season 3 part 2.html">
-
-                <img id="poster_s3_p2" src="https://subdl.live/wp-content/uploads/2021/11/3-8.jpg" alt="attack on titan season 3 part 2 poster">
-
-            </a>
-
-        </div>
-
-        <p class="p_s3_p2">
-
-            <a class="desc" href="./seasons/season 3 part 2.html">ATTACK ON TITAN SEASON 3 PART 2 (DUB)</a>
-
-        </p>
-        
-        <p class="released_date">
-
-            Released: 2019
-
-        </p>
-
-    </section>
-
-    <section class="dots_s4_p1">
-
-        <h2><span>final season part 1 (dub)</span></h2>
-
-        <div>
-
-            <a target="_blank" href="./seasons/season 4 part 1.html">
-
-                <img id="poster_s4_p1" src="https://wallpapercave.com/dwp1x/wp8334214.jpg" alt="attack on titan season 4 part 1 poster">
-
-            </a>
-
-        </div>
-
-        <p class="p_s4_p1">
-
-            <a class="desc" href="./seasons/season 4 part 1.html">ATTACK ON TITAN SEASON 4 PART 1 (DUB)</a>
-
-        </p>
-        
-        <p class="released_date">
-
-            Released: 2021
-
-        </p>
-
-    </section>
-
-    <section class="dots_s4_p2">
-
-        <h2><span> final season part 2 (sub)</span></h2>
-
-        <div>
-
-            <a target="_blank" href="./seasons/season 4 part 2.html">
-
-                <img id="poster_s4_p2" src="https://wallpapercave.com/wp/wp10506837.jpg" alt="attack on titan season 4 part 1 poster">
-
-            </a>
-
-        </div>
-
-        <p class="p_s4_p2">
-
-            <a class="desc" href="./seasons/season 4 part 2.html">ATTACK ON TITAN SEASON 4 PART 2 (SUB)</a>
-
-        </p>
-        
-        <p class="released_date">
-
-            Released: 2022
-
-        </p>
-
-    </section>
-
-    <section class="dots" id="dots_ova">
-
-        <h2><span>ova</span></h2>
-
-        <div>
-
-            <a target="_blank" href="./seasons/OVA.html">
-
-                <img id="poster_ova" src="https://c4.wallpaperflare.com/wallpaper/481/664/838/anime-attack-on-titan-attack-on-titan-black-hair-blue-eyes-hd-wallpaper-preview.jpg" alt="attack on titan ova poster">
-
-            </a>
-
-        </div>
-
-        <p class="p_ova">
-
-            <a class="desc" href="./seasons/OVA.html">ATTACK ON TITAN OVA </a>
-
-        </p>
-        
-        <p class="released_date">
-
-            Released: 2013
-
-        </p>
-
-    </section>
-
-    <section class="dots_junior">
-
-        <h2><span>attack on titan: junior High (parody)</span></h2>
-
-        <div>
-
-            <a target="_blank" href="./seasons/aot_junior_high.html">
-
-                <img id="poster_junior" src="https://wallpapercave.com/wp/wp8711308.png" alt="attack on titan junior high poster">
-
-            </a>
-
-        </div>
-
-        <p class="p_junior">
-
-            <a class="desc" href="./seasons/aot_junior_high.html">ATTACK ON TITAN JUNIOR HIGH </a>
-
-        </p>
-        
-        <p class="released_date">
-
-            Released: 2015
-
-        </p>
-
-    </section>
-
-
-    </section>
-
-    <section class="dots_links" id="dots_download">
-
-        <h2><span>all seasons download links</span></h2>
-        <h3 class="links"><span>season 1 download links</span></h3>
-        <div>
-
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/4uxnHaSQ#hIpUjoAfOaCZ_5Es5wmerINInUQEjC8uY9Tur_205aA">episode 1</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/JzogBJwS#EA1S-Lc4vAR0qj_bI7mrc5FhFKjTdvjEd4ls6FDIwG0">episode 2</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/QuoHDApC#Hh5Z88JRM2GN2mYU9u-64qQKir08DnycIGtsX-wfe78">episode 3</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/suplGIRJ#aHltDnXu-wR8FSW79e41than_1frSP1WnsHUaS7_Tm4">episode 4</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/I3gBzIZb#i-gV_fCOAZjh5v9eGc07pDOEnXmgtnOPnCMKJ6jIBQ4">episode 5</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/wnpBkKqR#7Z3CvcoJb4nyuKtHdoCPjW_ewVPZo4_tw_DAHKswlhM">episode 6</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/Jmx0DTZJ#HudtyNdEIO7t-LLG_8bHGUmeCkwI2JF0sh-cjN-P3AQ">episode 7</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/k3xUwJaZ#vXH9rFVSQqHhwbMJsJkEyqMMhPegCZbpszM6TGYlFSs">episode 8</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/BqhyxTLZ#p5RfOFimhqHfId4MNe1bZJsSSF6lcC-CVI3CWJ1vj18">episode 9</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/92hmRbhZ#nGrlgMSPhXsvH65g0tq9KxluGgVp6fEEQK4auW9i-Nc">episode 10</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/Fv4mURTb#FaTCLivGJ0BpFuBvY9Fl-n87j93LVW6-xRpac9LfdA8">episode 11</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/p3gxBSpK#W9SJoZ4i97srPlVsa_6o1Q7Hg6r7BP2rq8JX6X95Bco">episode 12</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/RyxTnapZ#SwDBSHaZMO2XCUlxDINQSC9BrKdWIBkGMmrSb8OyhHE">episode 13</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/E7oz1QJA#P4HnF0mBl1muocOAiuVgVXbayATxRAnKjF1QjuDz95Q">episode 14</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/EzgV0I7A#R5Y-myAyUTiLdfVQzQhB66y4W69WUYBduXsrdVrO4pE">episode 15</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/lv4DnKBT#zfYhIkq_NTssTWX7l6C2Y30w4joAUXY_aL1FkbqOfUo">episode 16</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/4jwSwZ5T#5MH-6BPl2Z0N1mNBxgpvGLpKZUPkKu_3LyybtM-0Fk8">episode 17</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/Mmoz1SoC#kEQ2a5xsXOIXFXVG9joyvwF0b99zLppvy_tq8ey86do">episode 18</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/4i4WnR6Y#pEQv-4mhVrI5gkS28gf0BhKobUDjkqESrGfh73Ku8-8">episode 19</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/ErxDkKYL#FewjJW7PqI4MoaBlh2-bLYbpHi_agTTqztVzKpDZbpo">episode 20</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/dq4wDJZY#eE_nfnVAiDxwh40On-4OpmQhP51QYP2fpXVgP8W_yp8">episode 21</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/FzoiCLBQ#niEvdTig6j2RdVhTgiRjApuJJSGIwglmJJ1rJbgRnWg">episode 22</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/RmwUSZ6I#7vHxFVcMJ4yzbq8gxZbtHMUrWJOnU0RkW13cL6z4w3I">episode 23</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/k9UVzQYS#MqlKgasJBdYNOfCRWUr016r8tQZb0Q9Po223MUv7_Hk">episode 24</a>
-            <a target="_blank" class="download_links"
-                href="https://mega.nz/file/xtdnSSBI#XK069q41U_suMMaeVaxdPn5y-eZtx4gL_k8uiyKk7Hc">episode 25</a>
-
-        </div>
-
-        <h3 class="links"><span>season 2 download links</span></h3>
-        <div>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/dtsVzQBD#P0S5FlVMIKRqvRHLdcjmcCHFcUnj0sdqm8rPEfvGuqQ">episode 1</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/1glH2CoK#0So05sSKi9cAa6r4WsUtwbtumiXaW7UH0uYN0Zz6p2k">episode 2</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/18tXkAwS#FfW6eNcshzlUDocLrpZ0aLMhQJnY854B7p1U7Z7kkOk">episode 3</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/MgtRmSIC#qKgSM4aGWLijaAx1AZVcIp_ud1BuI3vfa4r0eNeEPjc">episode 4</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/VxtlAK7J#KWeQDRavc5AtpMU3ntUo_VSm7O4KzX2tNap45dqvSZo">episode 5</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/o0t3kKAL#y98jvG635JMr2Ntg5FR-dEzX7EOrabT-nmyRmOPUExg">episode 6</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/ltl33CAS#HkqliXm41k-Q2MAhZMCMJ6gnrzPYMAteeUXXTspkuJg">episode 7</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/gp8lBSTB#w7kD31kU59E5O61oeYSu644jTsk643xglU_r2AeVcio">episode 8</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/EoknjIrS#JIsgEeGKJZ9iqZHlpXpWZeEKtFx5L0QBus_KQpei2o8">episode 9</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/lgl3VSBJ#-Gtn9VIl1zQO3hnQkbJxK63p36RSfOnquC3zIDNIho0">episode 10</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/E81RGKZQ#xu728-f9ZsW-NROK7Kw_RkTe5WPh7dZGbKYDDa5ay9Q">episode 11</a>
-            <a target="_blank" class="download_links1"
-                href="https://mega.nz/file/Vw8HWQQB#jt5anvPeP5Nnw_D5TieNa0Y3AnRtgcY6LhBCExAqEIE">episode 12</a>
-        </div>
-
-        <h3 class="links"><span>season 3 part 1 download links</span></h3>
-        <div>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/ptNHjAoQ#cJ263HMJIg2FGmmwvbZ3pP_IH1eu5Xx8NaHML7836sE">episode 1</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/FltUzDiD#sm20YKlMTDGPassbMpAvv5HXepKVydG6v0WMeqYTW3c">episode 2</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/wk0mgZDa#TYIkwaBnO61B3yUPPkEQU3IYRzQ_OaLRK-_SYe4NlbQ">episode 3</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/AgUxnYRA#cc2Fe6Fj6W_6OohPuYa1eduHPPQCIERIOcFrYwWnkQg">episode 4</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/k8F1Fa7S#m60XCJH-AWXHCmq5ypVOcZ9BbhpHFrRXZ73G6FsEt7c">episode 5</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/w0kmnRIT#UL0PnkYqeBJIftO8pa4ZnwveM49orpwDSI7yJVJjUxQ">episode 6</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/Yk1AhRDb#v2ClUfBxftb0jw2Xz0Cgk_bKkVGDa2tQkxWZ2r3V8_4">episode 7</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/U5FziCgb#HyXNNB27MG8FLBT_DRyVLP87SqsQLkuRx5NWBKtBlbQ">episode 8</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/MhsykbIB#15TC3u4ibJBQWHThP14ZwikjgdRJJHz5unFXORuwkC4">episode 9</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/FldRja5I#ooWP7N3N633l67GMfJngU89YLHurwQ9yRHnb8fzv4BM">episode 10</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/tsNznIaY#Y0kdLF0vcN_RhDB3DF_OhYVmmewfOMUeZzBdfMwZuMc">episode 11</a>
-            <a target="_blank" class="download_links2"
-                href="https://mega.nz/file/YlEBwaiD#z32i9BLmZC5hgY5gnnrdFRJ9J-Mu4K1oMTDfnzgYtMk">episode 12</a>
-
-        </div>
-
-        <h3 class="links"><span>season 3 part 2 download links</span></h3>
-        <div>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/1oNBUSYA#aEdjTu50Mg6iM2gFfwU0kcOtn_eNf7NLVx3Ho2TMB4E">episode 1</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/BokQ1Q4R#D1KzQcZXeLLvfrh_uJ3XFcjRm355Z8igJOLXpVm0jsE">episode 2</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/pxMjhayS#GcYuVnB5V4GDyt8_51GHAfKAFpLa8m7ps6cxQSGz7iE">episode 3</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/QlUTnSyZ#UocDeNJKeg5fOjCGuJXMt8_zWyBqbkyokXZO-K_OA_U">episode 4</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/p1s2hYrS#CMEiDEG3BUKZwl6L1BeKz9rfdFc6z94ch6PHWM85oV8">episode 5</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/R8tAlAyJ#45-Y0cuVUMPG9LCUEN7fsawI3OCS_0aJlkg6FpFv-9A">episode 6</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/Mt8wBYRb#DqGMc-UbQ_URitj0_DTvr88hnmpdhXBI1tqDOeu5lK0">episode 7</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/5wV1xCAa#L5HDmnBLTdfEO3xEWLB2heO1_TyEb3KkrZqJstBNT30">episode 8</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/l1UnWaxR#6l8KOYA2UqRLniVqgk7_RBm2oEBNzMRG2zHfBUuXaME">episode 9</a>
-            <a target="_blank" class="download_links3"
-                href="https://mega.nz/file/Qkc3xYRC#lu-6DkzbbQSCBbA0zUScbj2pXxPd1jUc59pvRzM3Bzg">episode 10</a>
-
-        </div>
-
-        <h3 class="links"><span>final season part 1 download links</span></h3>
-        <div>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/AhlEUIwZ#nASJwFFgXjMbKmHSHDxmj6uV-teUbLMX4xZQ75J0_ew">episode 1</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/Mk0AlKCD#6ElkDon24EF_RP6aNko8r9J1ASA9UckMsjmWIlPEgeE">episode 2</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/581g1IjD#XV5Xnd_yFs_mg0dJ9JNd_PEMNaPqFB4Y3VvR5jMKX0U">episode 3</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/c4lExACD#KxalYcwcYV5zsilwRXF322qsbmqIDXW6MMy0XsV7lks">episode 4</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/M9sEgIQI#WKYPsGi5cqtsm7iOs06Ytc_5k67g2fbjD5h5cDIFvWQ">episode 5</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/g49mxIKD#MjK8kkmUrAII1now1l8bCG5BWkpp_H8P8szZLv7VHR4">episode 6</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/c0smlQha#r0FLT2QKOHpTFSn5ogOc8NvuX9RcYYTOyCPrY23krck">episode 7</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/wtsinKjS#vl5UwVdABM4EGHtW_3EVnsvqZXiPQ2VR8yrgxHKXyyc">episode 8</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/5l1ARAxA#nLkAUXXIsbEayxkWGwIQ1KVPykhdtkxtQnA4TK4u33A">episode 9</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/RwkEhQIB#5ZsoZWBDhoMf8RRSP_6m1-YYC6dIBVnFKBSAgI9zYK0">episode 10</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/Ql020S6A#-uQ22mI-FoiwfqFJebXjuA0YQKR8gYrox0eWpRe30gw">episode 11</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/Q48QGC5R#kiyOcf5Tu_muju8bjBofJiW2Lky_NyOfOewO7joG3dc">episode 12</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/YxkmHAoQ#IK1ZFYzbmWuFx_UWwWo_wwKDMM64XDb7wE-orhuLuPo">episode 13</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/dt9UiArC#bIeINX7cc8Z_91BdG5qdARM1IkFu6E3KI272gwshXHI">episode 14</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/w0sAACAb#B4iExblO11j9iho5dozXSJs72opMFx4azLBIGIvB5Mc">episode 15</a>
-            <a target="_blank" class="download_links4"
-                href="https://mega.nz/file/V0s2zKbS#pD7Rsvy79OzmiiDO7Y4M4PnJXjy41fDPHn7B8ZTBeq4">episode 16</a>
-
-        </div>
-
-        <h3 class="links"><span>final season part 2 download links</span></h3>
-        <div>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/ct823CxY#HH_OOmXRHmqUqu3eC1FV342YC1Bi6RLFXYSuPDIO7UE">episode 1</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/41sgzA7S#iQFL4Q9pB-brrNGU5MdraLmw1K5FYb9xQ2pBi2ANGDc">episode 2</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/g5ky3aZZ#39liEyNaSQUWcVmFrQBtKWIT-UZRq7d18NLtjXVF2_g">episode 3</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/gwsiCaZR#yhStL-qWeUn6ETtJUBckIcmXyHaAI2kMVFlQ18beyss">episode 4</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/U19CmAAb#pJ2sc-oGFA3fE_nG8Gj5Ms8JEBZTfzO21mvWAgpVNaE">episode 5</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/tokVWAQa#oZOUL4wjP9AXm4YbwIBe06HTDJR5P62zvdujkmyet6E">episode 6</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/B5kl3YaL#z7mswgAvc8jA6rG-4iFcHcVUJvGBG62JtF6v-72uvRg">episode 7</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/081imAyS#0_DH8Y8xgODJbj_XkNvhSM-8nkVxwVB0Ic1KGnOxIIg">episode 8</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/818AnABb#0ZhgqhVmmaLDK9npWxLFnV4jLlLQ-p2FE6MN2kb5bpY">episode 9</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/crh00Q4b#UKA4xwjihETHwKpnMdNd9V7co07RxwQHs-NAOXerMUc">episode 10</a>
-            <a target="_blank" class="download_links5" href="https://mega.nz/file/ZvAiFBDR#J89e7DrBE7pHeDfR28Qd3vHf_KuKigvv31JVicKsxZY">episode 11</a>
-            <a target="_blank" class="download_links5" href="https://terabox.com/s/1fbaA40BaqsEhyr1qNNPvHA ">episode 12</a>
-
-        </div>
-
-    </section>
-    
-    <section id="about1">
-
-        <h2 class="about_aot"><span>about attack on titan</span></h2>
-
-        <div>
-
-        <img id="about_img"
-            src="https://m.media-amazon.com/images/I/81dH7-pkjiL._SL1500_.jpg"
-            alt="this is an image">
-            
-        <p>
-
-        <p class="tatakae">
-            “If you win, you live. If you lose, you die. If you don't fight, you can't win!” “Tatakae!”
-            <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;-Attack On Titan
-        </p>
-
-        <p class="clear1">
-            Attack on Titan (Japanese: 進撃の巨人, Hepburn: Shingeki no Kyojin, lit. "The Advancing Giants") is a Japanese
-            manga series written and illustrated by Hajime Isayama. It is set in a world where humanity lives inside
-            cities surrounded by three enormous walls that protect them from the gigantic man-eating humanoids referred
-            to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about
-            the destruction of his hometown and the death of his mother. Attack on Titan was serialized in Kodansha's
-            monthly shōnen manga magazine Bessatsu Shōnen Magazine from September 2009 to April 2021, with its chapters
-            collected in 34 tankōbon volumes.
-
-            An anime television series was produced by Wit Studio (seasons 1–3) and MAPPA (season 4). A 25-episode first
-            season was broadcast from April to September 2013, followed by a 12-episode second season broadcast from
-            April to June 2017. A 22-episode third season was broadcast in two parts, with the first 12 episodes airing
-            from July to October 2018 and the last 10 episodes airing from April to July 2019. A fourth and final season
-            premiered in December 2020, airing 16 episodes in its first part, with the second part premiering in January
-            2022.
-
-        </p>
-
-        </p>
-
-        </div>
-
-    </section>
-
-    <section>
-
-        
-
-        <h2><span>telegram</span></h2>
-
-        <div class="tele">
-
-        <a target="_blank" class="telegram" href="https://t.me/ANIMEMOVIEANDSERIES1">telegram</a>
-
-        <p class="tel">
-            you can also visit my telegram channel
-        </p>
-
-        </div>
-
-    </section>
-
-
-    <section class="dots_manga" id="dots_manga_id">
-
-        <h2><span>manga</span></h2>
-
-        <div class="manga_div">
-
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-001/">chapter 1</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-2/">chapter 2</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-3/">chapter 3</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-4/">chapter 4</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-5/">chapter 5</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-6/">chapter 6</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-7/">chapter 7</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-8/">chapter 8</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-9/">chapter 9</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-9-5/">chapter 9.5</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-10/">chapter 10</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-11/">chapter 11</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-12/">chapter 12</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-13-2/">chapter 13</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-14/">chapter 14</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-15/">chapter 15</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-16/">chapter 16</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-17/">chapter 17</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-18/">chapter 18</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-18/">chapter 18.5</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-19/">chapter 19</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-20/">chapter 20</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-21/">chapter 21</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-22/">chapter 22</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-23/">chapter 23</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-24/">chapter 24</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-25/">chapter 25</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-26/">chapter 26</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-27/">chapter 27</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-28/">chapter 28</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-29/">chapter 29</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-30/">chapter 30</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-31/">chapter 31</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-32/">chapter 32</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-33/">chapter 33</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-34/">chapter 34</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-35/">chapter 35</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-36/">chapter 36</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-37/">chapter 37</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-38/">chapter 38</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-39/">chapter 39</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-40/">chapter 40</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-41/">chapter 41</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-42/">chapter 42</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-43/">chapter 43</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-44/">chapter 44</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-45/">chapter 45</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-46/">chapter 46</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-47/">chapter 47</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-48/">chapter 48</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-49/">chapter 49</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-50/">chapter 50</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-51/">chapter 51</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-52/">chapter 52</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-53/">chapter 53</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-54/">chapter 54</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-55/">chapter 55</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-56/">chapter 56</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-57/">chapter 57</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-58/">chapter 58</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-59/">chapter 59</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-60/">chapter 60</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-61/">chapter 61</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-62/">chapter 62</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-63/">chapter 63</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-64/">chapter 64</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-65/">chapter 65</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-66/">chapter 66</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-67/">chapter 67</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-68/">chapter 68</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-69/">chapter 69</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-70/">chapter 70</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-71/">chapter 71</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-72/">chapter 72</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-73/">chapter 73</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-74/">chapter 74</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-75/">chapter 75</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-76/">chapter 76</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-77/">chapter 77</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-78/">chapter 78</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-79/">chapter 79</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-80/">chapter 80</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-81/">chapter 81</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-82/">chapter 82</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-83/">chapter 83</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-84/">chapter 84</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-85/ ">chapter 85</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-86/">chapter 86</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-87/">chapter 87</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-88/">chapter 88</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-89/">chapter 89</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-90/">chapter 90</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-091/">chapter 91</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-092/">chapter 92</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-93/">chapter 93</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-94/">chapter 94</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-95/">chapter 95</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-96/">chapter 96</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-097/">chapter 97</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-098/">chapter 98</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-099/">chapter 99</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-100/">chapter 100</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-101/">chapter 101</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-102/">chapter 102</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-103/">chapter 103</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-104/">chapter 104</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-105/">chapter 105</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-106/">chapter 106</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-107/">chapter 107</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-108/">chapter 108</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-109/">chapter 109</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-110/">chapter 110</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-111/#">chapter 111</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-112/">chapter 112</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-113/">chapter 113</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-114/">chapter 114</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-115/">chapter 115</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-116/">chapter 116</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-117/">chapter 117</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-118/">chapter 118</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-119/">chapter 119</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-120/">chapter 120</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-121/">chapter 121</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-122/">chapter 122</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-123/">chapter 123</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-124/">chapter 124</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-125/">chapter 125</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-126/">chapter 126</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-127/">chapter 127</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-128/">chapter 128</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-129/">chapter 129</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-130/">chapter 130</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-131/">chapter 131</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-132/">chapter 132</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-133/">chapter 133</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-134/">chapter 134</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-135/">chapter 135</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-136/">chapter 136</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-137/">chapter 137</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-138/">chapter 138</a>
-            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-139/">chapter 139</a>
-            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-colored-chapter-139-5/">chapter 139.5</a>
-            
-            
-
-        </div>
-
-    </section>
-
-    <section>
-        <h2 class="founder"><span>FOUNDER OF ATTACK ON TITAN</span></h2>
-
-        <img class="profile_img"
-            src="https://comicvine.gamespot.com/a/uploads/square_medium/6/67663/4536543-25185.jpg"
-            alt="image">
-
-        <h3 class="profile_name">HAJIMA ISAYAMA</h3>
-
-        <div class="handle">
-
-            <a target="_blank" href="https://www.facebook.com/IsayamaHajime"><i class="fab fa-facebook-f"></i></a>
-            <a target="_blank" href="https://www.youtube.com/watch?v=lDDRtjSq3Fc&t=19s&ab_channel=BBCNews"><i class="fab fa-youtube"></i></a>
-            <a target="_blank" href="https://twitter.com/hajime_isayama?lang=en"><i class="fab fa-twitter"></i></a>
-            <a target="_blank" href="https://www.instagram.com/mr.isayama"><i class="fab fa-instagram"></i></a>
-
-        </div>
-
-        <h4>
-            Hajime Isayama (諫山 創, Isayama Hajime, born August 29, 1986) is a Japanese manga artist. His first
-            series, Attack on Titan (2009–2021), became one of the best-selling manga series of all time with
-            100 million copies in circulation as of December 2019.
-        </h4>
-
-        <h5>
-            sayama was born in Ōyama, Ōita Prefecture, Japan, which is now part of Hita. He was attending Hita
-            Rinko Senior High School when he began submitting manga works to contests.[3] After graduating, he
-            matriculated in the manga design program of the arts department at Kyushu Designer Gakuen. In 2006,
-            he applied for the Magazine Grand Prix known as MGP promoted by Kodansha Ltd. and a short version of
-            Attack on Titan (Shingeki no Kyojin) was given the "Fine Work" award. At age twenty, he moved to
-            Tokyo and worked at an Internet café in order to pursue a career in writing manga.[5] This one-shot
-            would later be included in the series' guidebook and included with the first Blu-ray of the anime
-            adaptation.
-        </h5>
-
-    </section>
-
-
-    <section>
-    
- <footer>
-   <div class="content">
-     <div class="left box">
-       <div class="upper">
-         <div class="topic">About me</div>
-         <p>I'm just a Student who wanted to learn how to make websites as well as a big fan of Attack on Titan series.</p>
+    <!---------- HOME ---------->
+
+    <section class="home swiper" id="home">
+
+        <div class="swiper-wrapper">
+
+    <!--frame 1-->
+
+            <div class="swiper-slide container">
+
+                <img src="./images/season 1 main.jpg" alt=""> 
+
+                   <div class="home-text">
+                       
+                           <span>Wit Studio</span>
+                       
+                               <h1>Attack on Titan:<br> season 1</h1>
+                               <br><br>
+                               
+                                   <a target="_blank" href="./seasons/season 1.html" class="play">
+                                       <i class='bx bx-play' ></i>
+                                   </a>
+                       
+                   </div> 
+               </div>
+
+    <!--frame 2-->
+
+    <div class="swiper-slide container">
+
+        <img src="./images/season 2 main.png" alt=""> 
+
+           <div class="home-text">
+               
+                   <span>Wit Studio</span>
+               
+                       <h1>Attack on Titan:<br> season 2</h1>
+                       <br><br>
+                       
+                           <a target="_blank" href="./seasons/season 2.html" class="play">
+                               <i class='bx bx-play' ></i>
+                           </a>
+               
+           </div> 
        </div>
-       <div class="lower">
-         <div class="topic">Contact us</div>
-         <div class="phone">
-           <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767 (number doesn't exist)</a>
-         </div>
-         <div class="email">
-           <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com (email doesn't exist)</a>
-         </div>
+
+    <!--frame 3-->
+
+    <div class="swiper-slide container">
+
+        <img src="./images/season 3 part 1 main.jpg" alt=""> 
+
+           <div class="home-text">
+               
+                   <span>Wit Studio</span>
+               
+                       <h1>Attack on Titan:<br> season 3 part 1</h1>
+                       <br><br>
+                       
+                           <a target="_blank" href="./seasons/season 3 part 1.html" class="play">
+                               <i class='bx bx-play' ></i>
+                           </a>
+               
+           </div> 
        </div>
-     </div>
-     <div class="middle box">
-       <div class="topic">Future Plans</div>
-       <div><a href="#">Website for Free Full HD Movies</a></div>
-       <div><a href="#">Website for Free 3d Movies</a></div>
-       <div><a href="#">Netflix Replica for Anime</a></div>
-       <div><a href="#">Personal Website</a></div>
-       <div><a href="#">E-Commerce Website</a></div>
-     </div>
-     <div class="right box">
-       <div class="topic">Subscribe us</div>
-       <form action="#">
-         <input type="text" placeholder="Enter email address">
-         <input type="submit" name="" value="Send">
-         <div class="media-icons">
-           <a target="_blank" href="https://www.instagram.com/anime_icons_caps/"><i class="fab fa-instagram"></i></a>
-           <a href="#"><i class="fab fa-twitter"></i></a>
-           <a target="_blank" href="https://www.youtube.com/c/WannaCat"><i class="fab fa-youtube"></i></a>
-           <a target="_blank" href="https://t.me/ANIMEMOVIEANDSERIES1"><i class="fab fa-telegram"></i></a>
-         </div>
-       </form>
-     </div>
-   </div>
-   <div class="bottom">
-     <p>Copyright © 2022 <a href="#">ASTRO</a> All rights reserved</p>
-   </div>
- </footer>
+
+       <!--frame 4-->
+
+    <div class="swiper-slide container">
+
+        <img src="./images/season 3 part 2 main.jpg" alt=""> 
+
+           <div class="home-text">
+               
+                   <span>Wit Studio</span>
+               
+                       <h1>Attack on Titan:<br> season 3 part 2</h1>
+                       <br><br>
+                       
+                           <a target="_blank" href="./seasons/season 3 part 2.html" class="play">
+                               <i class='bx bx-play' ></i>
+                           </a>
+               
+           </div> 
+       </div>
+
+       <!--frame 5-->
+
+    <div class="swiper-slide container">
+
+        <img src="./images/season 4 part 1 main.png" alt=""> 
+
+           <div class="home-text">
+               
+                   <span>mappa Studio</span>
+               
+                       <h1>Attack on Titan:<br> season 4 part 1</h1>
+                       <br><br>
+                       
+                           <a target="_blank" href="./seasons/season 4 part 1.html" class="play">
+                               <i class='bx bx-play' ></i>
+                           </a>
+               
+           </div> 
+       </div>
+
+       <!--frame 6-->
+
+    <div class="swiper-slide container">
+
+        <img src="./images/season 4 part 2 main.png" alt=""> 
+
+           <div class="home-text">
+               
+                   <span>MAPPA Studio</span>
+               
+                       <h1>Attack on Titan:<br> season 4 part 2</h1>
+                       <br><br>
+                       
+                           <a target="_blank" href="./seasons/season 4 part 2.html" class="play">
+                               <i class='bx bx-play' ></i>
+                           </a>
+               
+           </div> 
+       </div>
+
+       <!--frame 7-->
+
+    <div class="swiper-slide container">
+
+        <img src="./images/season ova.png" alt=""> 
+
+           <div class="home-text">
+               
+                   <span>Wit Studio</span>
+               
+                       <h1>Attack on Titan:<br> OVA</h1>
+                       <br><br>
+                       
+                           <a target="_blank" href="./seasons/ova.html" class="play">
+                               <i class='bx bx-play' ></i>
+                           </a>
+               
+           </div> 
+       </div>
+
+       <!--frame 8-->
+
+    <div class="swiper-slide container">
+
+        <img src="./images/season junior high.png" alt=""> 
+
+           <div class="home-text">
+               
+                   <span>Wit Studio</span>
+               
+                       <h1>Attack on Titan:<br> junior high</h1>
+                       <br><br>
+                       
+                           <a target="_blank" href="./seasons/junior high.html" class="play">
+                               <i class='bx bx-play' ></i>
+                           </a>
+               
+           </div> 
+       </div>
+
+
+        </div>
+    
+
+    <div class="swiper-pagination"></div>
+
+
+    </section> 
+
+    <!-------- download section ---------->
+
+    <section class="download" id="download">
+
+        <h2 class="heading">download</h2>
+
+        <div class="sub-heading-controller">
+        <h3 class="sub-heading">season 1</h3>
+
+        <div class="downloads">
+
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/4uxnHaSQ#hIpUjoAfOaCZ_5Es5wmerINInUQEjC8uY9Tur_205aA">ep 1</a>          
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/JzogBJwS#EA1S-Lc4vAR0qj_bI7mrc5FhFKjTdvjEd4ls6FDIwG0">ep 2</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/QuoHDApC#Hh5Z88JRM2GN2mYU9u-64qQKir08DnycIGtsX-wfe78">ep 3</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/suplGIRJ#aHltDnXu-wR8FSW79e41than_1frSP1WnsHUaS7_Tm4">ep 4</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/I3gBzIZb#i-gV_fCOAZjh5v9eGc07pDOEnXmgtnOPnCMKJ6jIBQ4">ep 5</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/wnpBkKqR#7Z3CvcoJb4nyuKtHdoCPjW_ewVPZo4_tw_DAHKswlhM">ep 6</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/Jmx0DTZJ#HudtyNdEIO7t-LLG_8bHGUmeCkwI2JF0sh-cjN-P3AQ">ep 7</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/k3xUwJaZ#vXH9rFVSQqHhwbMJsJkEyqMMhPegCZbpszM6TGYlFSs">ep 8</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/BqhyxTLZ#p5RfOFimhqHfId4MNe1bZJsSSF6lcC-CVI3CWJ1vj18">ep 9</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/92hmRbhZ#nGrlgMSPhXsvH65g0tq9KxluGgVp6fEEQK4auW9i-Nc">ep 10</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/Fv4mURTb#FaTCLivGJ0BpFuBvY9Fl-n87j93LVW6-xRpac9LfdA8">ep 11</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/p3gxBSpK#W9SJoZ4i97srPlVsa_6o1Q7Hg6r7BP2rq8JX6X95Bco">ep 12</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/RyxTnapZ#SwDBSHaZMO2XCUlxDINQSC9BrKdWIBkGMmrSb8OyhHE">ep 13</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/E7oz1QJA#P4HnF0mBl1muocOAiuVgVXbayATxRAnKjF1QjuDz95Q">ep 14</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/EzgV0I7A#R5Y-myAyUTiLdfVQzQhB66y4W69WUYBduXsrdVrO4pE">ep 15</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/lv4DnKBT#zfYhIkq_NTssTWX7l6C2Y30w4joAUXY_aL1FkbqOfUo">ep 16</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/4jwSwZ5T#5MH-6BPl2Z0N1mNBxgpvGLpKZUPkKu_3LyybtM-0Fk8">ep 17</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/Mmoz1SoC#kEQ2a5xsXOIXFXVG9joyvwF0b99zLppvy_tq8ey86do">ep 18</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/4i4WnR6Y#pEQv-4mhVrI5gkS28gf0BhKobUDjkqESrGfh73Ku8-8">ep 19</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/ErxDkKYL#FewjJW7PqI4MoaBlh2-bLYbpHi_agTTqztVzKpDZbpo">ep 20</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/dq4wDJZY#eE_nfnVAiDxwh40On-4OpmQhP51QYP2fpXVgP8W_yp8">ep 21</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/FzoiCLBQ#niEvdTig6j2RdVhTgiRjApuJJSGIwglmJJ1rJbgRnWg">ep 22</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/RmwUSZ6I#7vHxFVcMJ4yzbq8gxZbtHMUrWJOnU0RkW13cL6z4w3I">ep 23</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/k9UVzQYS#MqlKgasJBdYNOfCRWUr016r8tQZb0Q9Po223MUv7_Hk">ep 24</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/xtdnSSBI#XK069q41U_suMMaeVaxdPn5y-eZtx4gL_k8uiyKk7Hc">ep 25</a>
+
+        </div>
+
+        <h3 class="sub-heading">season 2</h3>
+
+            <div class="downloads">
+
+            
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/dtsVzQBD#P0S5FlVMIKRqvRHLdcjmcCHFcUnj0sdqm8rPEfvGuqQ">ep 1</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/1glH2CoK#0So05sSKi9cAa6r4WsUtwbtumiXaW7UH0uYN0Zz6p2k">ep 2</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/18tXkAwS#FfW6eNcshzlUDocLrpZ0aLMhQJnY854B7p1U7Z7kkOk">ep 3</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/MgtRmSIC#qKgSM4aGWLijaAx1AZVcIp_ud1BuI3vfa4r0eNeEPjc">ep 4</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/VxtlAK7J#KWeQDRavc5AtpMU3ntUo_VSm7O4KzX2tNap45dqvSZo">ep 5</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/o0t3kKAL#y98jvG635JMr2Ntg5FR-dEzX7EOrabT-nmyRmOPUExg">ep 6</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/ltl33CAS#HkqliXm41k-Q2MAhZMCMJ6gnrzPYMAteeUXXTspkuJg">ep 7</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/gp8lBSTB#w7kD31kU59E5O61oeYSu644jTsk643xglU_r2AeVcio">ep 8</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/EoknjIrS#JIsgEeGKJZ9iqZHlpXpWZeEKtFx5L0QBus_KQpei2o8">ep 9</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/lgl3VSBJ#-Gtn9VIl1zQO3hnQkbJxK63p36RSfOnquC3zIDNIho0">ep 10</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/E81RGKZQ#xu728-f9ZsW-NROK7Kw_RkTe5WPh7dZGbKYDDa5ay9Q">ep 11</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/Vw8HWQQB#jt5anvPeP5Nnw_D5TieNa0Y3AnRtgcY6LhBCExAqEIE">ep 12</a>
+            </div>
+
+            <h3 class="sub-heading">season 3 part 1</h3>
+
+                <div class="downloads">
+                
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/ptNHjAoQ#cJ263HMJIg2FGmmwvbZ3pP_IH1eu5Xx8NaHML7836sE">ep 1</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/FltUzDiD#sm20YKlMTDGPassbMpAvv5HXepKVydG6v0WMeqYTW3c">ep 2</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/wk0mgZDa#TYIkwaBnO61B3yUPPkEQU3IYRzQ_OaLRK-_SYe4NlbQ">ep 3</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/AgUxnYRA#cc2Fe6Fj6W_6OohPuYa1eduHPPQCIERIOcFrYwWnkQg">ep 4</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/k8F1Fa7S#m60XCJH-AWXHCmq5ypVOcZ9BbhpHFrRXZ73G6FsEt7c">ep 5</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/w0kmnRIT#UL0PnkYqeBJIftO8pa4ZnwveM49orpwDSI7yJVJjUxQ">ep 6</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/Yk1AhRDb#v2ClUfBxftb0jw2Xz0Cgk_bKkVGDa2tQkxWZ2r3V8_4">ep 7</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/U5FziCgb#HyXNNB27MG8FLBT_DRyVLP87SqsQLkuRx5NWBKtBlbQ">ep 8</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/MhsykbIB#15TC3u4ibJBQWHThP14ZwikjgdRJJHz5unFXORuwkC4">ep 9</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/FldRja5I#ooWP7N3N633l67GMfJngU89YLHurwQ9yRHnb8fzv4BM">ep 10</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/tsNznIaY#Y0kdLF0vcN_RhDB3DF_OhYVmmewfOMUeZzBdfMwZuMc">ep 11</a>
+                    <a target="_blank" class="download_btn"
+                        href="https://mega.nz/file/YlEBwaiD#z32i9BLmZC5hgY5gnnrdFRJ9J-Mu4K1oMTDfnzgYtMk">ep 12</a>
+        
+                </div>
+
+                <h3 class="sub-heading">season 3 part 2</h3>
+
+                <div class="downloads">
+
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/1oNBUSYA#aEdjTu50Mg6iM2gFfwU0kcOtn_eNf7NLVx3Ho2TMB4E">ep 1</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/BokQ1Q4R#D1KzQcZXeLLvfrh_uJ3XFcjRm355Z8igJOLXpVm0jsE">ep 2</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/pxMjhayS#GcYuVnB5V4GDyt8_51GHAfKAFpLa8m7ps6cxQSGz7iE">ep 3</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/QlUTnSyZ#UocDeNJKeg5fOjCGuJXMt8_zWyBqbkyokXZO-K_OA_U">ep 4</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/p1s2hYrS#CMEiDEG3BUKZwl6L1BeKz9rfdFc6z94ch6PHWM85oV8">ep 5</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/R8tAlAyJ#45-Y0cuVUMPG9LCUEN7fsawI3OCS_0aJlkg6FpFv-9A">ep 6</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/Mt8wBYRb#DqGMc-UbQ_URitj0_DTvr88hnmpdhXBI1tqDOeu5lK0">ep 7</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/5wV1xCAa#L5HDmnBLTdfEO3xEWLB2heO1_TyEb3KkrZqJstBNT30">ep 8</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/l1UnWaxR#6l8KOYA2UqRLniVqgk7_RBm2oEBNzMRG2zHfBUuXaME">ep 9</a>
+            <a target="_blank" class="download_btn"
+                href="https://mega.nz/file/Qkc3xYRC#lu-6DkzbbQSCBbA0zUScbj2pXxPd1jUc59pvRzM3Bzg">ep 10</a>
+
+                </div>
+
+                <h3 class="sub-heading">season 4 part 1</h3>
+
+                <div class="downloads">
+
+                    <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/AhlEUIwZ#nASJwFFgXjMbKmHSHDxmj6uV-teUbLMX4xZQ75J0_ew">ep 1</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/Mk0AlKCD#6ElkDon24EF_RP6aNko8r9J1ASA9UckMsjmWIlPEgeE">ep 2</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/581g1IjD#XV5Xnd_yFs_mg0dJ9JNd_PEMNaPqFB4Y3VvR5jMKX0U">ep 3</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/c4lExACD#KxalYcwcYV5zsilwRXF322qsbmqIDXW6MMy0XsV7lks">ep 4</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/M9sEgIQI#WKYPsGi5cqtsm7iOs06Ytc_5k67g2fbjD5h5cDIFvWQ">ep 5</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/g49mxIKD#MjK8kkmUrAII1now1l8bCG5BWkpp_H8P8szZLv7VHR4">ep 6</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/c0smlQha#r0FLT2QKOHpTFSn5ogOc8NvuX9RcYYTOyCPrY23krck">ep 7</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/wtsinKjS#vl5UwVdABM4EGHtW_3EVnsvqZXiPQ2VR8yrgxHKXyyc">ep 8</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/5l1ARAxA#nLkAUXXIsbEayxkWGwIQ1KVPykhdtkxtQnA4TK4u33A">ep 9</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/RwkEhQIB#5ZsoZWBDhoMf8RRSP_6m1-YYC6dIBVnFKBSAgI9zYK0">ep 10</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/Ql020S6A#-uQ22mI-FoiwfqFJebXjuA0YQKR8gYrox0eWpRe30gw">ep 11</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/Q48QGC5R#kiyOcf5Tu_muju8bjBofJiW2Lky_NyOfOewO7joG3dc">ep 12</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/YxkmHAoQ#IK1ZFYzbmWuFx_UWwWo_wwKDMM64XDb7wE-orhuLuPo">ep 13</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/dt9UiArC#bIeINX7cc8Z_91BdG5qdARM1IkFu6E3KI272gwshXHI">ep 14</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/w0sAACAb#B4iExblO11j9iho5dozXSJs72opMFx4azLBIGIvB5Mc">ep 15</a>
+                <a target="_blank" class="download_btn"
+                    href="https://mega.nz/file/V0s2zKbS#pD7Rsvy79OzmiiDO7Y4M4PnJXjy41fDPHn7B8ZTBeq4">ep 16</a>
+
+                </div>
+
+                <h3 class="sub-heading">season 4 part 2</h3>
+
+                <div class="downloads">
+
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/ct823CxY#HH_OOmXRHmqUqu3eC1FV342YC1Bi6RLFXYSuPDIO7UE">ep 1</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/41sgzA7S#iQFL4Q9pB-brrNGU5MdraLmw1K5FYb9xQ2pBi2ANGDc">ep 2</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/g5ky3aZZ#39liEyNaSQUWcVmFrQBtKWIT-UZRq7d18NLtjXVF2_g">ep 3</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/gwsiCaZR#yhStL-qWeUn6ETtJUBckIcmXyHaAI2kMVFlQ18beyss">ep 4</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/U19CmAAb#pJ2sc-oGFA3fE_nG8Gj5Ms8JEBZTfzO21mvWAgpVNaE">ep 5</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/tokVWAQa#oZOUL4wjP9AXm4YbwIBe06HTDJR5P62zvdujkmyet6E">ep 6</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/B5kl3YaL#z7mswgAvc8jA6rG-4iFcHcVUJvGBG62JtF6v-72uvRg">ep 7</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/081imAyS#0_DH8Y8xgODJbj_XkNvhSM-8nkVxwVB0Ic1KGnOxIIg">ep 8</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/818AnABb#0ZhgqhVmmaLDK9npWxLFnV4jLlLQ-p2FE6MN2kb5bpY">ep 9</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/crh00Q4b#UKA4xwjihETHwKpnMdNd9V7co07RxwQHs-NAOXerMUc">ep 10</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/ZvAiFBDR#J89e7DrBE7pHeDfR28Qd3vHf_KuKigvv31JVicKsxZY">ep 11</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/x2BDRRZC#ffyZJtl1LoYBB-8Jjy3gtpQQPUsj2yUKDTJF3J3GFMQ">ep 12</a>
+
+                </div>
+
+                <h3 class="sub-heading">ova</h3>
+
+                <div class="downloads">
+
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/YiICmZST#iZNlkbO3QM96_2mgcugy9_o4O3EXdFHoqMxy5WVqtA4" >ep 1</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/QuIyVBzZ#EjRsICxbGASK4e08Q9Dm3kDy7nj0NNbprO1Tz89E9W4" >ep 2</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/B7BAmLRB#vpKuPF43rACgJh7wdstNCvoaWhPVS4Uaw3NjD5LVjhw" >ep 3</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/xiZg2BQa#vcBOvMuWrme1h-Aq1wzN3pX6gdPTO8OcvK7nPdr_XXQ" >ep 4</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/UiA20TrY#m1r4c75DIeFGzZSoqVSVVx9-hgUpCvS6iwu28pHAiP4" >ep 5</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/c2BiCDBB#eOk10Wm-lQkDfXJ2hWl-_d5wziSf2EtO5SVlpAj6x7k" >ep 6</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/NrQkiZ7D#BVc8Jyxsle3Qo3vF6bvYlarXeS-nC-O8zHbJFcMNnfU" >ep 7</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/h2J0ARwL#dgAzlhuL1a2GDZoxwi88Xv64viArUP9MOV8qwOlosR4" >ep 8</a>
+
+                    
+                </div>
+
+                <h3 class="sub-heading">junior high</h3>
+
+                <div class="downloads">
+
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/Y6pyBSYA#ttegTb6yDb99TXgx-lwGeFQ_ZjFsrmGABcqUn3AHeLk">ep 1</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/ZipSnQAI#VjR_NFBbO1I7H2ptPcHlr7WiqZ-b721HB7IAtldk3zk">ep 2</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/V6og3QYK#5j_5KwnoACgzWGRQIMCPy-AfZ0Bh8zNfu82io7BBa9c">ep 3</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/M6wiAaTJ#A4OesnxNgBngRiMiAn2GAB9dL6pmd4KuPOafPXt6n38">ep 4</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/d65UXQJL#SkfWEdfhVqEBsMqICmrPqytODInq6SsQ65MIiGmBxUQ">ep 5</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/I6oknAwC#I5wp3DFAmCwpjWWWFf-HMUiIOSsfsXBZpa1eor2Vxfc">ep 6</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/Zrh2DA7T#0k-ydX0V35BjRaF9BOyc7rnAn9s9bze67mrm48fWVGY">ep 7</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/giwkiQbQ#4B9suUpaMpoXnjOl8qwvtxoCSNCIAFcEPTnHF-YlgUI">ep 8</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/E24UECTY#2LxSGu00aYR1LNi9teMI5ar9nUfcNRSpT6xCYu8lGSk">ep 9</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/VjgyQQhB#CUc-9HWZWk-8XRxghWlfi885NpHV6-F3VgMt0vq-dME">ep 10</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/F3xw0Q5R#-QETUGNgptX0PLnKuqrqCuXBhH2jsUauwDeYKtNeQlA">ep 11</a>
+                    <a target="_blank" class="download_btn" href="https://mega.nz/file/B75mhSxR#birFDMsLIVpEWt3guC1s9QKugHijNXuZlADmEcairZg">ep 12</a>
+
+                </div>
+
+        </div>
+
 
     </section>
 
-    
+    <section id="manga_op">
 
-    <script>
+        <h2 class="heading">manga</h2>
 
-        var mysong = document.getElementById("mysong");
-        var icon = document.getElementById("icon");
+        <div class="downloads">
 
-        icon.onclick = function(){
-            
-            if(mysong.paused){
-                mysong.play();
-                icon.src = "pause.png";
-            }
-            else{
-                mysong.pause();
-                icon.src = "play.png";
-            }
-        }
-    
-    </script>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-001/">ch 1</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-2/">ch 2</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-3/">ch 3</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-4/">ch 4</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-5/">ch 5</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-6/">ch 6</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-7/">ch 7</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-8/">ch 8</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-9/">ch 9</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-9-5/">ch 9.5</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-10/">ch 10</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-11/">ch 11</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-12/">ch 12</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-13-2/">ch 13</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-14/">ch 14</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-15/">ch 15</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-16/">ch 16</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-17/">ch 17</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-18/">ch 18</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-18/">ch 18.5</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-19/">ch 19</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-20/">ch 20</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-21/">ch 21</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-22/">ch 22</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-23/">ch 23</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-24/">ch 24</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-25/">ch 25</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-26/">ch 26</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-27/">ch 27</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-28/">ch 28</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-29/">ch 29</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-30/">ch 30</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-31/">ch 31</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-32/">ch 32</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-33/">ch 33</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-34/">ch 34</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-35/">ch 35</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-36/">ch 36</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-37/">ch 37</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-38/">ch 38</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-39/">ch 39</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-40/">ch 40</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-41/">ch 41</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-42/">ch 42</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-43/">ch 43</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-44/">ch 44</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-45/">ch 45</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-46/">ch 46</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-47/">ch 47</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-48/">ch 48</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-49/">ch 49</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-50/">ch 50</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-51/">ch 51</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-52/">ch 52</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-53/">ch 53</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-54/">ch 54</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-55/">ch 55</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-56/">ch 56</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-57/">ch 57</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-58/">ch 58</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-59/">ch 59</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-60/">ch 60</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-61/">ch 61</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-62/">ch 62</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-63/">ch 63</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-64/">ch 64</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-65/">ch 65</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-66/">ch 66</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-67/">ch 67</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-68/">ch 68</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-69/">ch 69</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-70/">ch 70</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-71/">ch 71</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-72/">ch 72</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-73/">ch 73</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-74/">ch 74</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-75/">ch 75</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-76/">ch 76</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-77/">ch 77</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-78/">ch 78</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-79/">ch 79</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-80/">ch 80</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-81/">ch 81</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-82/">ch 82</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-83/">ch 83</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-84/">ch 84</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-85/ ">ch 85</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-86/">ch 86</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-87/">ch 87</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-88/">ch 88</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-89/">ch 89</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-90/">ch 90</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-091/">ch 91</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-092/">ch 92</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-93/">ch 93</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-94/">ch 94</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-95/">ch 95</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-chapter-96/">ch 96</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-097/">ch 97</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-098/">ch 98</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-099/">ch 99</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-100/">ch 100</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-101/">ch 101</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-102/">ch 102</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-103/">ch 103</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-104/">ch 104</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-105/">ch 105</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-106/">ch 106</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-107/">ch 107</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-108/">ch 108</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-109/">ch 109</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-110/">ch 110</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-111/#">ch 111</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-112/">ch 112</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-113/">ch 113</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-114/">ch 114</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-115/">ch 115</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-116/">ch 116</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-117/">ch 117</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-118/">ch 118</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-119/">ch 119</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-120/">ch 120</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-121/">ch 121</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-122/">ch 122</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-123/">ch 123</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-124/">ch 124</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-125/">ch 125</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-126/">ch 126</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-127/">ch 127</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-128/">ch 128</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-129/">ch 129</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-130/">ch 130</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-131/">ch 131</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-132/">ch 132</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-133/">ch 133</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-134/">ch 134</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-135/">ch 135</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-136/">ch 136</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-137/">ch 137</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-138/">ch 138</a>
+            <a target="_blank" class="manga_links" href="https://ww7.readsnk.com/chapter/shingeki-no-kyojin-colored-chapter-139/">ch 139</a>
+            <a target="_blank" class="manga_links" href="https://www.read-attackontitan-manga.com/manga/shingeki-no-kyojin-colored-chapter-139-5/">ch 139.5</a>
 
- <!-- JavaScript carousel -->
- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        </div>
+
+        
+    </section>
+
+              
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- link to Custom Js -->
+    <script src="aotjs.js"></script>
 
 </body>
 </html>
