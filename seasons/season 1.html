@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>season 1</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root{
+    --main-color: #F40612;
+    --text-color: rgb(9, 9, 9);
+    --bg-color: white;
+}
+
+/* custom scroll bar*/
+
+html::-webkit-scrollbar{
+    width: 0.4rem;
+    background:var(--text-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body{
+    background: #242424;
+    color:#c4000a;
+
+}
+
+
+@keyframes animate-background{
+    
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+}
+
+        .anime{
+            font-family: 'Poppins', sans-serif;
+            font-size: medium;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .banner{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 0 100px;
+            background: url(./images1/season\ 1\ main.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .banner .content{
+            max-width: 550px;
+        }
+        .banner .content h2{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 2.5em;
+            letter-spacing: 0.1em;
+            color: #fff;
+        }
+        .banner .content h2 span{
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+        }
+        .banner .content p{
+            
+            font-weight: 300;
+            font-size: 1.2em;
+            letter-spacing: 0.02em;
+            line-height: 1.5em;
+            color: #fff;
+            margin: 15px 0 35px;
+        }
+        .play{
+            position: relative;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+            font-family: 'Poppins', sans-serif;
+        }
+        .play img{
+            margin-right: 10px;
+            max-width: 50px;
+        }
+        .trailer{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.95);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .trailer.active{
+            visibility: visible;
+            opacity: 1;
+        }
+        .trailer iframe{
+            max-width: 900px;
+            outline: none;
+            width: 1300px;
+            height: 550px;
+        }
+        .trailer .close{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            filter: invert(1);
+            max-width: 32px;
+        }
+
+.watch{
+    padding: 4rem 0 1.5rem;
+}
+
+.heading{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    letter-spacing: 0.23rem;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242424;
+    background: #242424;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535;
+    font-family: 'Poppins', sans-serif;
+}
+
+.online_watch{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.4rem;
+}
+
+.watch_btn{
+    width: 930px;
+    max-width: 968px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fbbd68;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    letter-spacing: 0.23rem;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242424;
+    background: #242424;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535;
+    font-family: 'Poppins', sans-serif;
+}
+
+.watch_btn:hover {
+    color: rgb(200, 0, 0);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535,
+    inset -2px -2px 4px #353535, inset 2px 2px 4px #000;
+}
+
+
+@media (max-width: 991px){
+    
+    .banner{
+        padding: 100px 50px;
+    }
+    .banner .content h2{
+        font-weight: 400;
+        font-size: 2em;
+        letter-spacing: 0.05em;
+    }
+    .banner .content p{
+        font-size: 1em;
+    }
+    .trailer iframe{
+        max-width: 90%;
+        outline: none;
+        width: 500px;
+        height: 200px;
+    }
+
+    .heading{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <div class="banner">
+
+            <div class="content">
+                
+                <span class="anime">attack on titan</span>
+                <h2><span>season 1</span></h2>
+    
+                <p>
+                    When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the humans' safe zone. During the carnage that follows, soldier Eren Jaeger sees one of the creatures devour his mother, which leads him to vow that he will kill every Titan. He enlists some friends who survived to help him, and that group is humanity's last hope for avoiding extinction at the hands of the monsters.
+                    <br><br> First episode date: 7 April 2013
+                   <br> Adapted from: Attack on Titan
+                   <br> Language: English
+                   <br> Executive producer: George Wada
+                   <br> Music composed by: Revo
+                   <br> Genres: Anime, Horror, Drama, Dark fantasy, Action fiction, Adventure, Apocalyptic and post-apocalyptic fiction
+    
+                </p>
+    
+                <a href="#" class="play" onclick="toggle()"><img src="./play.png" alt="tralier">trailer</a>
+    
+            </div>
+    
+        </div>
+
+
+        <div class="trailer">
+
+            <!-- <video src="" controls></video> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/MGRm4IzK1SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <img src="./close.png" alt="Close" onclick="toggle()" class="close">
+     
+        </div>
+
+    </section>
+
+    <section class="watch">
+
+        <h2 class="heading">watch online</h2>
+
+
+        <div class="online_watch">
+
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/4uxnHaSQ#hIpUjoAfOaCZ_5Es5wmerINInUQEjC8uY9Tur_205aA" allowfullscreen >1</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/JzogBJwS#EA1S-Lc4vAR0qj_bI7mrc5FhFKjTdvjEd4ls6FDIwG0" allowfullscreen >2</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/QuoHDApC#Hh5Z88JRM2GN2mYU9u-64qQKir08DnycIGtsX-wfe78" allowfullscreen >3</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/suplGIRJ#aHltDnXu-wR8FSW79e41than_1frSP1WnsHUaS7_Tm4" allowfullscreen >4</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/I3gBzIZb#i-gV_fCOAZjh5v9eGc07pDOEnXmgtnOPnCMKJ6jIBQ4" allowfullscreen >5</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/wnpBkKqR#7Z3CvcoJb4nyuKtHdoCPjW_ewVPZo4_tw_DAHKswlhM" allowfullscreen >6</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/Jmx0DTZJ#HudtyNdEIO7t-LLG_8bHGUmeCkwI2JF0sh-cjN-P3AQ" allowfullscreen >7</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/k3xUwJaZ#vXH9rFVSQqHhwbMJsJkEyqMMhPegCZbpszM6TGYlFSs" allowfullscreen >8</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/BqhyxTLZ#p5RfOFimhqHfId4MNe1bZJsSSF6lcC-CVI3CWJ1vj18" allowfullscreen >9</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/92hmRbhZ#nGrlgMSPhXsvH65g0tq9KxluGgVp6fEEQK4auW9i-Nc" allowfullscreen >10</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/Fv4mURTb#FaTCLivGJ0BpFuBvY9Fl-n87j93LVW6-xRpac9LfdA8" allowfullscreen >11</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/p3gxBSpK#W9SJoZ4i97srPlVsa_6o1Q7Hg6r7BP2rq8JX6X95Bco" allowfullscreen >12</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/RyxTnapZ#SwDBSHaZMO2XCUlxDINQSC9BrKdWIBkGMmrSb8OyhHE" allowfullscreen >13</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/E7oz1QJA#P4HnF0mBl1muocOAiuVgVXbayATxRAnKjF1QjuDz95Q" allowfullscreen >14</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/EzgV0I7A#R5Y-myAyUTiLdfVQzQhB66y4W69WUYBduXsrdVrO4pE" allowfullscreen >15</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/lv4DnKBT#zfYhIkq_NTssTWX7l6C2Y30w4joAUXY_aL1FkbqOfUo" allowfullscreen >16</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/4jwSwZ5T#5MH-6BPl2Z0N1mNBxgpvGLpKZUPkKu_3LyybtM-0Fk8" allowfullscreen >17</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/Mmoz1SoC#kEQ2a5xsXOIXFXVG9joyvwF0b99zLppvy_tq8ey86do" allowfullscreen >18</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/4i4WnR6Y#pEQv-4mhVrI5gkS28gf0BhKobUDjkqESrGfh73Ku8-8" allowfullscreen >19</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/ErxDkKYL#FewjJW7PqI4MoaBlh2-bLYbpHi_agTTqztVzKpDZbpo" allowfullscreen >20</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/dq4wDJZY#eE_nfnVAiDxwh40On-4OpmQhP51QYP2fpXVgP8W_yp8" allowfullscreen >21</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/FzoiCLBQ#niEvdTig6j2RdVhTgiRjApuJJSGIwglmJJ1rJbgRnWg" allowfullscreen >22</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/RmwUSZ6I#7vHxFVcMJ4yzbq8gxZbtHMUrWJOnU0RkW13cL6z4w3I" allowfullscreen >23</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/k9UVzQYS#MqlKgasJBdYNOfCRWUr016r8tQZb0Q9Po223MUv7_Hk" allowfullscreen >24</iframe>
+        <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/xtdnSSBI#XK069q41U_suMMaeVaxdPn5y-eZtx4gL_k8uiyKk7Hc" allowfullscreen >25</iframe>
+
+
+        </div>
+
+        
+
+
+    </section>
+
+
+    <script>
+
+        function toggle(){
+
+            var trailer = document.querySelector('.trailer');
+            let iframe = document.querySelector('.iframe');
+
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+
+        }
+
+    </script>
+    
+</body>
+</html>

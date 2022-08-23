@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>season 4 part 2</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root{
+    --main-color: #F40612;
+    --text-color: rgb(9, 9, 9);
+    --bg-color: white;
+}
+
+/* custom scroll bar*/
+
+html::-webkit-scrollbar{
+    width: 0.4rem;
+    background:var(--text-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body{
+    background: #242424;
+    color:#c4000a;
+
+}
+
+
+@keyframes animate-background{
+    
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+}
+
+        .anime{
+            font-family: 'Poppins', sans-serif;
+            font-size: medium;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .banner{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 0 100px;
+            background: url(./images1/season\ 4\ part\ 2\ main.png);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .banner .content{
+            max-width: 550px;
+        }
+        .banner .content h2{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 2.5em;
+            letter-spacing: 0.1em;
+            color: #fff;
+        }
+        .banner .content h2 span{
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+        }
+        .banner .content p{
+            
+            font-weight: 600;
+            font-size: 1.2em;
+            letter-spacing: 0.02em;
+            line-height: 1.5em;
+            color: #fff;
+            margin: 15px 0 35px;
+        }
+        .play{
+            position: relative;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+            font-family: 'Poppins', sans-serif;
+        }
+        .play img{
+            margin-right: 10px;
+            max-width: 50px;
+        }
+        .trailer{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.95);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .trailer.active{
+            visibility: visible;
+            opacity: 1;
+        }
+        .trailer iframe{
+            max-width: 900px;
+            outline: none;
+            width: 1300px;
+            height: 550px;
+        }
+        .trailer .close{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            filter: invert(1);
+            max-width: 32px;
+        }
+
+.watch{
+    padding: 4rem 0 1.5rem;
+}
+
+.heading{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    letter-spacing: 0.23rem;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242424;
+    background: #242424;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535;
+    font-family: 'Poppins', sans-serif;
+}
+
+.online_watch{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.4rem;
+}
+
+.watch_btn{
+    width: 930px;
+    max-width: 968px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fbbd68;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    letter-spacing: 0.23rem;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242424;
+    background: #242424;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535;
+    font-family: 'Poppins', sans-serif;
+}
+
+.watch_btn:hover {
+    color: rgb(200, 0, 0);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535,
+    inset -2px -2px 4px #353535, inset 2px 2px 4px #000;
+}
+
+
+@media (max-width: 991px){
+    
+    .banner{
+       padding: 400px 100px;
+
+    }
+    .banner .content h2{
+        font-weight: 400;
+        font-size: 2em;
+        letter-spacing: 0.05em; 
+    }
+    .banner .content p{
+        font-size: 1em;
+    }
+    .trailer iframe{
+        max-width: 90%;
+        outline: none;
+        width: 500px;
+        height: 200px;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <div class="banner">
+
+            <div class="content">
+                
+                <span class="anime">attack on titan</span>
+                <h2><span>season 4 part 2</span></h2>
+    
+                <p>
+                    The fourth and final season of the Attack on Titan anime television series, subtitled Attack on Titan: The Final Season,[a] was produced by MAPPA, chief directed by Jun Shishido, and directed by Yuichiro Hayashi, replacing Tetsurō Araki and Masashi Koizuka, respectively. Scriptwriter Hiroshi Seko fully took over the series composition from Yasuko Kobayashi, and Tomohiro Kishi replaced Kyōji Asano as character designer due to the series switching production studios.[1] The season covers the Marley (chapters 91–106) and War for Paradis (chapters 107–116) arcs from the original manga by Hajime Isayama.
+                    <br><br> Country of origin	Japan
+                   <br> No. of episodes	12
+                  <br> Original release: January 9, 2022
+                   
+    
+                </p>
+    
+                <a href="#" class="play" onclick="toggle()"><img src="./play.png" alt="tralier">trailer</a>
+    
+            </div>
+    
+        </div>
+
+
+        <div class="trailer">
+
+            <!-- <video src="" controls></video> -->
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cvTipU9gN5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <img src="./close.png" alt="Close" onclick="toggle()" class="close">
+     
+        </div>
+
+    </section>
+
+    <section class="watch">
+
+        <h2 class="heading">watch online</h2>
+
+
+        <div class="online_watch">
+
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/ct823CxY#HH_OOmXRHmqUqu3eC1FV342YC1Bi6RLFXYSuPDIO7UE" allowfullscreen >1</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/41sgzA7S#iQFL4Q9pB-brrNGU5MdraLmw1K5FYb9xQ2pBi2ANGDc" allowfullscreen >2</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/g5ky3aZZ#39liEyNaSQUWcVmFrQBtKWIT-UZRq7d18NLtjXVF2_g" allowfullscreen >3</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/gwsiCaZR#yhStL-qWeUn6ETtJUBckIcmXyHaAI2kMVFlQ18beyss" allowfullscreen >4</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/U19CmAAb#pJ2sc-oGFA3fE_nG8Gj5Ms8JEBZTfzO21mvWAgpVNaE" allowfullscreen >5</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/tokVWAQa#oZOUL4wjP9AXm4YbwIBe06HTDJR5P62zvdujkmyet6E" allowfullscreen >6</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/B5kl3YaL#z7mswgAvc8jA6rG-4iFcHcVUJvGBG62JtF6v-72uvRg" allowfullscreen >7</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/081imAyS#0_DH8Y8xgODJbj_XkNvhSM-8nkVxwVB0Ic1KGnOxIIg" allowfullscreen >8</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/818AnABb#0ZhgqhVmmaLDK9npWxLFnV4jLlLQ-p2FE6MN2kb5bpY" allowfullscreen >9</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/crh00Q4b#UKA4xwjihETHwKpnMdNd9V7co07RxwQHs-NAOXerMUc" allowfullscreen>10</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/ZvAiFBDR#J89e7DrBE7pHeDfR28Qd3vHf_KuKigvv31JVicKsxZY" allowfullscreen>11</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/x2BDRRZC#ffyZJtl1LoYBB-8Jjy3gtpQQPUsj2yUKDTJF3J3GFMQ" allowfullscreen>12</iframe>
+
+            
+        </div>
+        
+
+
+    </section>
+
+
+    <script>
+
+        function toggle(){
+
+            var trailer = document.querySelector('.trailer');
+            let iframe = document.querySelector('.iframe');
+
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ova</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root{
+    --main-color: #F40612;
+    --text-color: rgb(9, 9, 9);
+    --bg-color: white;
+}
+
+/* custom scroll bar*/
+
+html::-webkit-scrollbar{
+    width: 0.4rem;
+    background:var(--text-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body{
+    background: #242424;
+    color:#c4000a;
+
+}
+
+
+@keyframes animate-background{
+    
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+}
+
+        .anime{
+            font-family: 'Poppins', sans-serif;
+            font-size: medium;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .banner{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 0 100px;
+            background: url(./images1/season\ ova.png);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .banner .content{
+            max-width: 550px;
+        }
+        .banner .content h2{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 2.5em;
+            letter-spacing: 0.1em;
+            color: #fff;
+        }
+        .banner .content h2 span{
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+        }
+        .banner .content p{
+            
+            font-weight: 600;
+            font-size: 1.2em;
+            letter-spacing: 0.02em;
+            line-height: 1.5em;
+            color: #fff;
+            margin: 15px 0 35px;
+        }
+        .play{
+            position: relative;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+            font-family: 'Poppins', sans-serif;
+        }
+        .play img{
+            margin-right: 10px;
+            max-width: 50px;
+        }
+        .trailer{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.95);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .trailer.active{
+            visibility: visible;
+            opacity: 1;
+        }
+        .trailer iframe{
+            max-width: 900px;
+            outline: none;
+            width: 1300px;
+            height: 550px;
+        }
+        .trailer .close{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            filter: invert(1);
+            max-width: 32px;
+        }
+
+.watch{
+    padding: 4rem 0 1.5rem;
+}
+
+.heading{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    letter-spacing: 0.23rem;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242424;
+    background: #242424;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535;
+    font-family: 'Poppins', sans-serif;
+}
+
+.online_watch{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.4rem;
+}
+
+.watch_btn{
+    width: 930px;
+    max-width: 968px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fbbd68;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    letter-spacing: 0.23rem;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242424;
+    background: #242424;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535;
+    font-family: 'Poppins', sans-serif;
+}
+
+.watch_btn:hover {
+    color: rgb(200, 0, 0);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535,
+    inset -2px -2px 4px #353535, inset 2px 2px 4px #000;
+}
+
+
+@media (max-width: 991px){
+    
+    .banner{
+       padding: 400px 100px;
+
+    }
+    .banner .content h2{
+        font-weight: 400;
+        font-size: 2em;
+        letter-spacing: 0.05em; 
+    }
+    .banner .content p{
+        font-size: 1em;
+    }
+    .trailer iframe{
+        max-width: 90%;
+        outline: none;
+        width: 500px;
+        height: 200px;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <div class="banner">
+
+            <div class="content">
+                
+                <span class="anime">attack on titan</span>
+                <h2><span>OVA</span></h2>
+    
+                <p>
+                    This is a list of all the OVA episodes from the Attack on Titan anime.
+                    <br><br> Country of origin	Japan
+                   <br> No. of episodes	8
+                   
+    
+                </p>
+    
+                <a href="#" class="play" onclick="toggle()"><img src="./play.png" alt="tralier">trailer</a>
+    
+            </div>
+    
+        </div>
+
+
+        <div class="trailer">
+
+            <!-- <video src="" controls></video> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zecVEtvm7zI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <img src="./close.png" alt="Close" onclick="toggle()" class="close">
+     
+        </div>
+
+    </section>
+
+    <section class="watch">
+
+        <h2 class="heading">watch online</h2>
+
+
+        <div class="online_watch">
+
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/YiICmZST#iZNlkbO3QM96_2mgcugy9_o4O3EXdFHoqMxy5WVqtA4" allowfullscreen >1</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/QuIyVBzZ#EjRsICxbGASK4e08Q9Dm3kDy7nj0NNbprO1Tz89E9W4" allowfullscreen >2</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/B7BAmLRB#vpKuPF43rACgJh7wdstNCvoaWhPVS4Uaw3NjD5LVjhw" allowfullscreen >3</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/xiZg2BQa#vcBOvMuWrme1h-Aq1wzN3pX6gdPTO8OcvK7nPdr_XXQ" allowfullscreen >4</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/UiA20TrY#m1r4c75DIeFGzZSoqVSVVx9-hgUpCvS6iwu28pHAiP4" allowfullscreen >5</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/c2BiCDBB#eOk10Wm-lQkDfXJ2hWl-_d5wziSf2EtO5SVlpAj6x7k" allowfullscreen >6</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/NrQkiZ7D#BVc8Jyxsle3Qo3vF6bvYlarXeS-nC-O8zHbJFcMNnfU" allowfullscreen >7</iframe>
+            <iframe width="640" height="360" class="watch_btn" frameborder="0" src="https://mega.nz/embed/h2J0ARwL#dgAzlhuL1a2GDZoxwi88Xv64viArUP9MOV8qwOlosR4" allowfullscreen >8</iframe>
+
+            
+        </div>
+        
+
+
+    </section>
+
+
+    <script>
+
+        function toggle(){
+
+            var trailer = document.querySelector('.trailer');
+            let iframe = document.querySelector('.iframe');
+
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+
+        }
+
+    </script>
+    
+</body>
+</html>
