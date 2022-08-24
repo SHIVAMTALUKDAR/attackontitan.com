@@ -19,6 +19,29 @@
     scroll-padding-top: 2rem;
 }
 
+html::-webkit-scrollbar{
+    width: 0.52rem;
+    background:var(#242424);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #c4000a;
+    border-radius: 5rem;
+}
+
+@keyframes animate-background{
+    
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
 body{
     background: #242424;
     color:#c4000a;
